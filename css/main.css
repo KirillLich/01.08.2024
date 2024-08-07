@@ -11,7 +11,8 @@
 
 html,
 body {
-    height: 100%;
+    height: 100vh;
+    width: 100vw;
     background-color: #d7b8a3;
 }
 
@@ -30,9 +31,13 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 14em;
+    font-size: clamp(0vw, 14rem, 35vw);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     position: absolute;
+}
+
+img {
+    max-width: 90vw;
 }
 
 /*
